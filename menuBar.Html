@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MenuBar</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Distribute items evenly along the main axis */
+            align-items: center; /* Center items vertically */
+            background-color: rgb(255, 255, 255); /* Example background color */
+            color: rgb(0, 0, 0); /* Example text color */
+            margin: 60px; /* Example padding */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 15px;
+            border: 1px solid black
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .logo img {
+            max-width: 100px; /* Adjust the maximum width of your logo */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="border-black">
+            <a>LOGO</a>
+            <!-- <img src="your-logo.png" alt="Your Logo"> -->
+        </div>
+        <ul class="border-black">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
