@@ -15,10 +15,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 32px;
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
-            padding-left: 52px;
-            padding-top: 54px;
+            padding-left: 60px;
+            padding-top: 60px;
         }
 
         .card:last-child {
@@ -26,12 +27,14 @@
         }
 
         #title {
-        font-size: 64px; /* Adjust the value as needed */
+        /* width: calc(100vw / 3); */
+        font-size: 56px; /* Adjust the value as needed */
         font-family: 'Quicksand', sans-serif; /* You can also specify font-family here */
         font-weight: 600;
         }
     
         #cardContainer {
+        /* width: calc((2 * 100vw) / 3); */
         display: flex;
         gap: 20px;
         flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
@@ -46,10 +49,20 @@
                     $("#menuBarContainer").load("menuBar.html"); // โหลดไฟล์ menuBar.html แล้วแทรกใน div ที่มี id="menuBarContainer"
                 });
             </script>
-    <div class="hero">
-        <div id="title">Architure</div>
+    <div class="hero border-black">
+        <div class="border-black" style="width: calc(100vw / 3); height: 414px; display: flex; justify-content: space-between; flex-direction: column; align-items: flex-start;">
+            <div class="border-black" id="title" style="height: 300px; display: flex; align-items: flex-end;">Architecture</div>
+            <div style="display: flex; flex-direction: row; gap: 6px; align-self: flex-start;">
+                <div class="border-black">icon</div>
+                <div class="border-black">icon</div>
+                <div class="border-black">icon</div>
+            </div>
+        </div>
+        
+        
+       
 
-        <div id="cardContainer"></div>
+        <div class="border-black" id="cardContainer" style="width: calc((2 * 100vw) / 3);"></div>
         <script>
             // ดึงข้อมูล card จากไฟล์ card.html มาแสดงในหน้า Home
         for (let i = 0; i < 3; i++) {

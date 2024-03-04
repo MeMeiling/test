@@ -10,6 +10,7 @@
             width: 280px;
             background-color: #f9f9f9;
             overflow: hidden;
+            border: 1px solid black
 
         }
         .card img {
@@ -18,13 +19,40 @@
             display: block;
             margin: 0 auto 10px;
         }
+
+        #cardText {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        }
+
+        #cardTitle {
+        font-size: 28px; /* Adjust the value as needed */
+        font-family: 'Quicksand', sans-serif; /* You can also specify font-family here */
+        font-weight: 600;
+        }
+        #cardDescription {
+        font-size: 12px; /* Adjust the value as needed */
+        font-family: 'Quicksand', sans-serif; /* You can also specify font-family here */
+        font-weight: 400;    
+        }
+
+        #cardLink {
+        font-size: 16px; /* Adjust the value as needed */
+        font-family: 'Quicksand', sans-serif; /* You can also specify font-family here */
+        font-weight: 800;    
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <img src="image/arch1pic.jpg" alt="Your Image">
-        <h2>Card Title</h2>
-        <p>This is a simple card.</p>
+        <div id="cardText">
+            <p id="cardTitle">Card Title</p>
+            <p id="cardDescription">Explore the beauty and functionality of architectural design with our collection of stunning</p>
+            <p id="cardLink">More detail</p>
+        </div>
+        
     </div>
 </body>
 </html>
