@@ -1,0 +1,42 @@
+body {
+    background: black;
+}
+
+div {
+    background: red;
+    font-size: 48px;
+}
+
+.flex {
+    background: yellow;
+    border: 1px solid salmon;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.logo {
+    background: pink;
+    color: white;
+    font-size: 24px;
+}
+
+.menu {
+    background: black;
+    color: white;
+    display: flex;
+    gap: 12;
+    font-size: 24px;
+
+}
+
+.profile {
+    background: white;
+    color: plum;
+    border-radius: 100%;
+    font-size: 24px;
+
+}
